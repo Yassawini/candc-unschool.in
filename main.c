@@ -1,30 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    float per;
-    printf("enter the percentage\n");
-    scanf("%f",&per);
-    if(per>80)
+    int num=0,sum=0;
+    do
     {
-        printf("A grade\n");
+        printf("enter a no.\n");
+        scanf("%d",&num);
+        sum=sum+num;
     }
-    if(per<80 && per>=70)
-    {
-        printf("B grade\n");
-    }
-    if(per<70 && per>=60)
-    {
-        printf("C grade\n");
-    }
-    if(per<60 && per>=45)
-    {
-        printf("D grade\n");
-
-    }
-    else
-    {
-        printf("fail");
-    }
+    while(num!=0);
+    printf("sum of all above numbers is :%d",sum);
     return 0;
 }
